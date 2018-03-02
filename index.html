@@ -14,19 +14,25 @@
 
 <link rel="stylesheet" href="assets/bootstrap.css" />
 <link rel="stylesheet" href="assets/styles.css" />
+<style>
+	canvas{
+		background-image: url('assets/s.jpg');
+		opacity: 7
+	}
+</style>
 
 <script>
 var sketcher = null;
 var brush = null;
 
 $(document).ready(function(e) {
-  
-  brush = new Image();
-    brush.src = 'assets/brush2.png';
-    brush.onload = function(){
-    sketcher = new Sketcher( "sketch", brush );
-    }
-  
+	
+	brush = new Image();
+	  brush.src = 'assets/brush2.png';
+	  brush.onload = function(){
+		sketcher = new Sketcher( "sketch", brush );
+	  }
+	
 });
 
 </script>
@@ -47,13 +53,13 @@ $(document).ready(function(e) {
           <ul class="nav secondary-nav">
             <a href="#">
              <input type="button" class="btn error" value="clear"
-              onclick="sketcher.clear();" />
+             	onclick="sketcher.clear();" />
              </a>
           </ul>
         </div>
       </div><!-- /topbar-inner -->
     </div><!-- /topbar -->
   </div>
-    <canvas id="sketch" width="1024" height="640" background="http://images.assettype.com/swarajya/2017-12/d2d17293-7def-4a38-989d-bf0110ee9cd6/601px-Sharada-Vowels.jpg?w=640&q=60&fmt=pjpeg&auto=format" />
+    <canvas id="sketch" width="1024" height="640" />
 </body>
 </html>
