@@ -16,10 +16,10 @@
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/styles.css" />
 <style>
-	canvas{
-		background-image: url('assets/s.jpg');
-		opacity: 7
-	}
+  canvas{
+    background-image: url('assets/a.jpg');
+    opacity: 7
+  }
   .row{
     margin-bottom: 30px;
     margin-top: 30px;
@@ -49,13 +49,13 @@ var sketcher = null;
 var brush = null;
 
 $(document).ready(function(e) {
-	
-	brush = new Image();
-	  brush.src = 'assets/brush2.png';
-	  brush.onload = function(){
-		sketcher = new Sketcher( "sketch", brush );
-	  }
-	
+  
+  brush = new Image();
+    brush.src = 'assets/brush2.png';
+    brush.onload = function(){
+    sketcher = new Sketcher( "sketch", brush );
+    }
+  
 });
 
 </script>
@@ -75,8 +75,8 @@ $(document).ready(function(e) {
           
           <ul class="nav secondary-nav">
             <a href="#">
-             <input type="button" class="btn error" value="clear"
-             	onclick="sketcher.clear();" />
+             <input taype="button" class="btn error" value="clear"
+              onclick="sketcher.clear();" />
              </a>
           </ul>
         </div>
@@ -89,19 +89,19 @@ $(document).ready(function(e) {
       <div class="container">
         <div class="row">
           <div class="col-md-2">
-            <img src="assets/s.jpg" id="ing1" width="100px" height="100px">
-          </div>
-          <div class="col-md-2">
-            <a href="a.html"><img src="assets/a.jpg" id="ing" width="100px" height="100px">
+           <a href="index.html"><img src="assets/s.jpg" id="ing" width="100px" height="100px">
           </div></a>
           <div class="col-md-2">
-            <a href="aa.html"><img src="assets/aa.jpg" id="ing" width="100px" height="100px">
+            <a href="pages/a.html"><img src="assets/a.jpg" id="ing1" width="100px" height="100px">
           </div></a>
           <div class="col-md-2">
-            <a href="ei.html"><img src="assets/ei.jpg" id="ing" width="100px" height="100px">
+            <a href="pages/aa.html"><img src="assets/aa.jpg" id="ing" width="100px" height="100px">
           </div></a>
           <div class="col-md-2">
-            <a href="ee.html"><img src="assets/ee.jpg" id="ing" width="100px" height="100px">
+            <a href="pages/ei.html"><img src="assets/ei.jpg" id="ing" width="100px" height="100px">
+          </div></a>
+          <div class="col-md-2">
+            <a href="pages/ee.html"><img src="assets/ee.jpg" id="ing" width="100px" height="100px">
           </div></a>
         </div>
         <div class="row">
